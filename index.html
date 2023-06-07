@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HomeworkJSlesson8</title>
+  <!-- BS5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+  <!-- MY CSS  -->
+  <link rel="stylesheet" href="./index.css" />
+</head>
+
+<body>
+  <div class="h1">
+    <h1>Homework JS Lesson 8</h1>
+  </div>
+  <div class="container">
+    <div class="content">
+      <div class="row getNumber">
+        <div class="col-6 p-0">
+          <input class="bgInput" id="inputNum" type="text" placeholder="Nhập số nguyên" />
+        </div>
+        <div class="col-2">
+          <button class="btn" id="btn">Lưu vào mảng</button>
+        </div>
+        <div class="col-2">
+          <button class="btn" id="btnClear">Xoá mảng</button>
+        </div>
+        <p class="text" id="text"></p>
+      </div>
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+              Exercise 1 : Tổng các số dương trong mảng
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <div class="row">
+                <div class="col-3">
+                  <button class="btn" id="btn1">Tính tổng </button>
+                </div>
+                <div class="col-12">
+                  <p class="text" id="text1"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Exercise 2 : Đếm có bao nhiêu số dương trong mảng
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <div class="row">
+                <div class="col-3">
+                  <button class="btn" id="btn2">Đếm số dương</button>
+                </div>
+                <div class="col-12">
+                  <p class="text" id="text2"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Exercise 3: Tìm số nhỏ nhất trong mảng
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <div class="row">
+                <div class="col-3">
+                  <button class="btn" id="btn3">Tìm số nhỏ nhất</button>
+                </div>
+                <div class="col-12">
+                  <p class="text" id="text3"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              Exercise 4: Tìm số dương nhỏ nhất trong mảng
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <div class="row">
+                <div class="col-3">
+                  <button class="btn" id="btn4">Tìm số</button>
+                </div>
+                <div class="col-12">
+                  <p class="text" id="text4"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+              Exercise 5 : Tìm số chẵn cuối cùng trong mảng
+            </button>
+          </h2>
+          <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <div class="row">
+                <div class="col-3">
+                  <button class="btn" id="btn5">Tìm số</button>
+                </div>
+                <div class="col-12">
+                  <p class="text" id="text5"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+              Exercise 6: Đổi chỗ 2 giá trị trong mảng theo vị trí
+            </button>
+          </h2>
+          <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <div class="row">
+                <div class="col-3">
+                  <input id="num1" type="text" placeholder="Nhập vị trí phần tử thứ 1">
+                </div>
+                <div class="col-3">
+                  <input id="num2" type="text" placeholder="Nhập vị trí phần tử thứ 2">
+                </div>
+                <div class="col-3">
+                  <button class="btn" id="btn6">Hoán đổi</button>
+                </div>
+                <div class="col-12">
+                  <p class="text" id="text6"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+              Exercise 7: Sắp xếp mảng theo thứ tự tăng dần
+            </button>
+          </h2>
+          <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <div class="row">
+                <div class="col-3">
+                  <button class="btn" id="btn7">Sắp xếp</button>
+                </div>
+                <div class="col-12">
+                  <p class="text" id="text7"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+              Exercise 8: Tìm số nguyên tố đầu tiên trong mảng
+            </button>
+          </h2>
+          <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <div class="row">
+                <div class="col-3">
+                  <button class="btn" id="btn8">Tìm số</button>
+                </div>
+                <div class="col-12">
+                  <p class="text" id="text8"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+              Exercise 9: Nhập thêm 1 mảng số thực, tìm xem trong mảng có bao nhiêu số nguyên?
+            </button>
+          </h2>
+          <div id="collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <div class="row">
+                <div class="col-3">
+                  <input class="bgInput" id="numLesson9" type="text" placeholder="Nhập số">
+                </div>
+                <div class="col-3">
+                  <button class="btn" id="btnSave9">Lưu vào mảng</button>
+                </div>
+                <div class="col-12">
+                  <p class="text" id="textSave9"></p>
+                </div>
+                <div class="col-3">
+                  <button class="btn" id="btnCount9">Đếm số nguyên</button>
+                </div>
+                <div class="col-12">
+                  <p class="text" id="text9"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+              Exercise 10:So sánh số lượng số dương và số lượng số âm xem số nào nhiều hơn.
+            </button>
+          </h2>
+          <div id="collapseTen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <div class="row">
+                <div class="col-3">
+                  <button class="btn" id="btn10">So sánh</button>
+                </div>
+                <div class="col-12">
+                  <p class="text" id="text10"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- MY JS  -->
+  <script src="./index.js"></script>
+  <!-- BS5 JS  -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
